@@ -3,7 +3,7 @@ name: Shell Commands
 on: [push]
 
 jobs:
-    run-shell-command:
+    linux-machine:
         runs-on: ubuntu-latest
         steps:
             - name: echo a string
@@ -25,3 +25,9 @@ jobs:
             - name: directory bash
               run: pwd
               shell: bash
+    linux-machine-dependent:
+        runs-on: ubuntu-latest
+        needs: [linux-machine]
+        steps:
+            - name: echo string
+              run: echo "Job 'linux-machine' has completed. Time to start this job."
