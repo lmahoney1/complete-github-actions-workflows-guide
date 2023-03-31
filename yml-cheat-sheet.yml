@@ -1,0 +1,24 @@
+string: test
+number: 22
+boolean: true
+dictionary:
+    key: value
+    key2: 22
+    key3:
+        nested-key: nested value
+array:
+    - item1
+    - item2
+dictionaryArray:
+    - key: value
+      key2: value2
+    - key: value
+      key2: value2
+longTextPerseveNewline: |
+    hello this is
+    a multi-line string
+    that will newlines when read
+longTextWithoutNewline: >
+    hello this is a
+    multi-line string that
+    will **not** have newlines when read
