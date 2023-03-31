@@ -9,6 +9,7 @@ dictionary:
 array:
     - item1
     - item2
+jsonArray: [item1, item2]
 dictionaryArray:
     - key: value
       key2: value2
